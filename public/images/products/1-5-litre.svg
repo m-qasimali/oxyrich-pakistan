@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Oxyrich 1.5 LITRE bottle (illustration)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4FBFD"/><stop offset="1" stop-color="#DDEFF6"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9FD3EA"/><stop offset=".18" stop-color="#E9F7FC"/><stop offset=".45" stop-color="#BFE4F3"/><stop offset=".8" stop-color="#8CC8E2"/><stop offset="1" stop-color="#6FB4D6"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E2775"/><stop offset="1" stop-color="#1E1A52"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C9A227" stop-opacity="0"/><stop offset="1" stop-color="#D4AF37"/></linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <ellipse cx="200" cy="560" rx="110" ry="12" fill="#0B3D91" opacity=".08"/>
+  <g transform="translate(200 0) scale(1 1) translate(-200 0)">
+    <rect x="172" y="40" width="56" height="34" rx="6" fill="#00A3C4"/>
+    <rect x="172" y="66" width="56" height="8" fill="#008BA8"/>
+    <path d="M178 76h44v26c0 18 52 40 52 92v330c0 18-14 30-32 30H158c-18 0-32-12-32-30V194c0-52 52-74 52-92z" fill="url(#glass)" stroke="#7DBFDC" stroke-width="2"/>
+    <path d="M140 230h120M140 470h120" stroke="#ffffff" stroke-opacity=".55" stroke-width="6" stroke-linecap="round"/>
+    <rect x="126" y="290" width="148" height="140" fill="url(#label)"/>
+    <path d="M190 430c30-14 56-22 84-26v26z" fill="url(#gold)"/>
+    <path d="M150 210c-6 40-6 240 0 300" stroke="#fff" stroke-opacity=".6" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="333" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#F5D90A">Pakistan</text>
+  <text x="200" y="378" text-anchor="middle" font-family="Impact, 'Arial Narrow', sans-serif" font-size="46" fill="#fff" letter-spacing="1">Oxyrich</text>
+  <text x="200" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#BFE9F5">1.5 LITRE</text>
+</svg>

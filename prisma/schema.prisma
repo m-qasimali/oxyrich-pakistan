@@ -1,0 +1,272 @@
+// Oxyrich Pakistan — data model
+// Money is stored as whole Pakistani Rupees (Int). Phone numbers are stored
+// normalised to the local 11-digit form, e.g. "03364448494" (see src/lib/phone.ts).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  OUT_FOR_DELIVERY
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  CASH_ON_DELIVERY
+  JAZZCASH // v2 — not offered in the UI yet
+  EASYPAISA // v2 — not offered in the UI yet
+}
+
+enum OrderSource {
+  WEBSITE
+  QUICK_ORDER
+  SUBSCRIPTION
+  ADMIN
+}
+
+enum SubscriptionFrequency {
+  WEEKLY
+  BIWEEKLY
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  PAUSED
+  CANCELLED
+}
+
+enum BottleReason {
+  DELIVERED // full bottles left with the customer (+)
+  RETURNED // empties collected from the customer (-)
+  ADJUSTMENT // manual correction by an admin (+/-)
+}
+
+enum EnquiryType {
+  CONTACT
+  COMMERCIAL
+  FILTRATION_PLANT
+  SOFTENING
+}
+
+enum EnquiryStatus {
+  NEW
+  CONTACTED
+  CLOSED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  phone        String   @unique
+  email        String?
+  passwordHash String
+  role         Role     @default(CUSTOMER)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  addresses     Address[]
+  orders        Order[]
+  subscriptions Subscription[]
+  bottleLedger  BottleLedger[]
+  resetTokens   PasswordResetToken[]
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Address {
+  id        String   @id @default(cuid())
+  userId    String
+  label     String? // "Home", "Office"
+  sector    String
+  street    String
+  house     String
+  notes     String?
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Product {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  name          String
+  category      String
+  sizeLitres    Float
+  /// Bottles per order unit: 1 for the 19 L dispenser bottle, 6/12 for cartons.
+  packSize      Int
+  /// Price in PKR per order unit (one bottle or one carton).
+  price         Int
+  /// Refundable deposit in PKR per returnable bottle (0 for disposable bottles).
+  depositAmount Int      @default(0)
+  isReturnable  Boolean  @default(false)
+  images        String[]
+  summary       String
+  description   String
+  /// Mineral composition table: [{ name, value, unit }]. Placeholder until lab report is provided.
+  composition   Json?
+  isAvailable   Boolean  @default(true)
+  sortOrder     Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  orderItems    OrderItem[]
+  subscriptions Subscription[]
+}
+
+model Order {
+  id              String        @id @default(cuid())
+  /// Human-friendly sequential number shown to customers as OX-<number>.
+  number          Int           @unique @default(autoincrement())
+  userId          String?
+  guestName       String
+  guestPhone      String
+  addressText     String
+  sector          String
+  status          OrderStatus   @default(PENDING)
+  paymentMethod   PaymentMethod @default(CASH_ON_DELIVERY)
+  source          OrderSource   @default(WEBSITE)
+  subtotal        Int
+  depositTotal    Int           @default(0)
+  deliveryFee     Int           @default(0)
+  total           Int
+  /// Empty returnable bottles the customer will hand back on this delivery.
+  bottlesReturned Int           @default(0)
+  notes           String?
+  subscriptionId  String?
+  deliveredAt     DateTime?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  user         User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
+  subscription Subscription?  @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)
+  items        OrderItem[]
+  bottleLedger BottleLedger[]
+
+  @@index([userId])
+  @@index([status, createdAt])
+  @@index([guestPhone])
+}
+
+model OrderItem {
+  id             String @id @default(cuid())
+  orderId        String
+  productId      String
+  /// Snapshot of the product name at order time.
+  productName    String
+  qty            Int
+  unitPrice      Int
+  depositPerUnit Int    @default(0)
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@index([orderId])
+}
+
+model Subscription {
+  id               String                @id @default(cuid())
+  userId           String
+  productId        String
+  qty              Int
+  frequency        SubscriptionFrequency
+  nextDeliveryDate DateTime
+  status           SubscriptionStatus    @default(ACTIVE)
+  addressText      String
+  sector           String
+  notes            String?
+  createdAt        DateTime              @default(now())
+  updatedAt        DateTime              @updatedAt
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+  orders  Order[]
+
+  @@index([status, nextDeliveryDate])
+  @@index([userId])
+}
+
+/// Running count of Oxyrich returnable bottles held by a customer.
+/// Balance = SUM(delta). Positive = bottles at the customer's premises.
+model BottleLedger {
+  id        String       @id @default(cuid())
+  userId    String
+  delta     Int
+  reason    BottleReason
+  orderId   String?
+  note      String?
+  createdAt DateTime     @default(now())
+
+  user  User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  order Order? @relation(fields: [orderId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([orderId])
+}
+
+model Enquiry {
+  id            String        @id @default(cuid())
+  type          EnquiryType
+  name          String
+  phone         String
+  email         String?
+  company       String?
+  monthlyVolume String?
+  address       String?
+  message       String
+  status        EnquiryStatus @default(NEW)
+  createdAt     DateTime      @default(now())
+
+  @@index([status, createdAt])
+}
+
+model Testimonial {
+  id          String   @id @default(cuid())
+  name        String
+  text        String
+  rating      Int      @default(5)
+  isPublished Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+/// Key/value store for business details editable from /admin/settings.
+/// Defaults live in src/config/site.ts; a row here overrides the default for that key.
+model SiteSetting {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+/// Fixed-window rate limiter shared by all serverless instances.
+model RateLimit {
+  key     String   @id
+  count   Int
+  resetAt DateTime
+}

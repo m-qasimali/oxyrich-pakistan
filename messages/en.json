@@ -1,0 +1,612 @@
+{
+  "meta": {
+    "siteName": "Oxyrich Pakistan",
+    "titleTemplate": "%s | Oxyrich Pakistan",
+    "home": {
+      "title": "Oxyrich Pakistan — Pure Mineral Water Delivery in Islamabad",
+      "description": "Purified, mineral- and oxygen-enriched drinking water with free home and office delivery across Islamabad, 24/7. Order 19 litre dispenser bottles, 1.5 L and 1 L cartons."
+    },
+    "products": {
+      "title": "Bottled Water Products — 19 L, 1.5 L & 1 L",
+      "description": "Order 19 litre dispenser bottles and cartons of 1.5 L and 1 L mineral water from Oxyrich Pakistan. Free delivery across Islamabad."
+    },
+    "order": {
+      "title": "Order Water Online",
+      "description": "Place your Oxyrich water order in under a minute. Cash on delivery, free delivery across Islamabad, 24/7."
+    },
+    "subscriptions": {
+      "title": "19 L Water Delivery Plans",
+      "description": "Weekly or bi-weekly 19 litre bottle delivery in Islamabad. Skip or pause any time from your account."
+    },
+    "services": {
+      "title": "Water Delivery, Bulk Supply & Filtration Plants",
+      "description": "Residential delivery, commercial bulk supply, filtration plant installation and water softening services in Islamabad."
+    },
+    "quality": {
+      "title": "Our 12-Step Filtration & Quality Control",
+      "description": "How Oxyrich purifies, tests and enriches every bottle: 12-step filtration, lab control and quality checks from source to bottle."
+    },
+    "about": {
+      "title": "About Oxyrich Pakistan",
+      "description": "We deliver quality water. Learn about Oxyrich Pakistan's mission to bring safe, fresh, healthy drinking water to every home and business."
+    },
+    "contact": {
+      "title": "Contact Us — Call, WhatsApp or Visit",
+      "description": "Call or WhatsApp 0336-4448494, email oxyrichpakistan@gmail.com, or visit us at 264, Street 6, I-9/3, Islamabad. Open 24/7."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Delivery areas and timings, bottle deposit and returns, minimum order and payment — answers to common questions about Oxyrich water delivery."
+    },
+    "login": {
+      "title": "Log in",
+      "description": "Log in to your Oxyrich account with your phone number."
+    },
+    "register": {
+      "title": "Create an account",
+      "description": "Create an Oxyrich account to reorder in one tap and manage deliveries."
+    },
+    "forgot": {
+      "title": "Forgot password",
+      "description": "Reset your Oxyrich account password."
+    },
+    "reset": {
+      "title": "Choose a new password",
+      "description": "Set a new password for your Oxyrich account."
+    },
+    "account": {
+      "title": "My account",
+      "description": "Your orders, subscriptions, addresses and bottle balance."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How Oxyrich Pakistan collects, uses and protects your personal information."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms for ordering and delivery of Oxyrich Pakistan bottled water."
+    },
+    "notFound": {
+      "title": "Page not found"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "services": "Services",
+    "quality": "Quality",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "subscriptions": "Delivery plans",
+    "orderNow": "Order Now",
+    "account": "My account",
+    "login": "Log in",
+    "logout": "Log out",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "language": "Language",
+    "switchTo": "اردو",
+    "switchToLabel": "Switch to Urdu",
+    "cart": "Your order",
+    "cartCount": "{count, plural, =0 {Your order is empty} one {# item in your order} other {# items in your order}}",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "order": "Order",
+    "skipToContent": "Skip to content",
+    "whatsappFab": "Chat with us on WhatsApp",
+    "toggleTheme": "Toggle dark mode"
+  },
+  "common": {
+    "freeDelivery": "Free delivery",
+    "open247": "Open 24/7",
+    "filtration12": "12-step filtration",
+    "labTested": "Lab tested",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "orderNow": "Order Now",
+    "orderOnWhatsApp": "Order on WhatsApp",
+    "callNow": "Call {phone}",
+    "addToOrder": "Add to order",
+    "added": "Added",
+    "perUnit": "per {unit}",
+    "bottle": "bottle",
+    "carton": "carton",
+    "cartonOf": "Carton of {count}",
+    "single": "Single bottle",
+    "deposit": "Refundable deposit {amount} per new bottle",
+    "returnable": "Returnable",
+    "unavailable": "Currently unavailable",
+    "indicativePrice": "Indicative price — we confirm the final price when we call to confirm your order.",
+    "loading": "Loading…",
+    "submit": "Submit",
+    "send": "Send",
+    "save": "Save",
+    "cancel": "Cancel",
+    "remove": "Remove",
+    "back": "Back",
+    "optional": "optional",
+    "required": "required",
+    "quantity": "Quantity",
+    "decrease": "Decrease quantity",
+    "increase": "Increase quantity",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "rating": "Rated {rating} out of 5",
+    "or": "or",
+    "yearsPlus": "{count}+ years"
+  },
+  "hero": {
+    "eyebrow": "Welcome to Oxyrich Pakistan",
+    "title": "Clean, safe water — the foundation of a healthy life",
+    "body": "Purified drinking water enriched with essential minerals and oxygen. It keeps your body fresh, your mind active and protects your family from waterborne disease — delivered free, 24/7, across Islamabad.",
+    "imageAlt": "Oxyrich Pakistan 19 litre dispenser water bottle"
+  },
+  "stats": {
+    "title": "Trusted across Islamabad",
+    "happyClients": "Happy clients",
+    "vehicles": "Delivery vehicles",
+    "employees": "Employees",
+    "years": "Years of experience"
+  },
+  "home": {
+    "productsEyebrow": "Our products",
+    "productsTitle": "Pure water in the size you need",
+    "productsBody": "From dispenser bottles for the home and office to cartons for the car, gym and events.",
+    "featuresEyebrow": "Why Oxyrich",
+    "featuresTitle": "A trusted name in the bottled water industry",
+    "featuresBody": "Always want safe water for a healthy life? Pure water aids digestion, improves your skin and boosts your overall well-being — and every Oxyrich bottle is made to deliver exactly that.",
+    "servicesEyebrow": "Services",
+    "servicesTitle": "Protect your family with the best water",
+    "testimonialsEyebrow": "Testimonials",
+    "testimonialsTitle": "What our customers say",
+    "quickOrderEyebrow": "Quick order",
+    "quickOrderTitle": "Order in 30 seconds",
+    "quickOrderBody": "Pick a product, tell us your sector and phone number — we'll call to confirm and deliver. Cash on delivery.",
+    "deliveryEyebrow": "Delivery areas",
+    "deliveryTitle": "Do we deliver to your sector?",
+    "deliveryBody": "We deliver free across Islamabad. Check your sector below — if it isn't listed, message us on WhatsApp and we'll do our best.",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions, answered",
+    "ctaTitle": "Ready for fresher, healthier water?",
+    "ctaBody": "Order now and get free delivery to your home or office — any day, any time."
+  },
+  "features": {
+    "qualityCheck": {
+      "title": "Quality check",
+      "body": "Every batch is tested against health and safety standards and monitored from source to bottle."
+    },
+    "filtration": {
+      "title": "12-step filtration",
+      "body": "Twelve purification stages remove impurities while retaining the essential minerals your body needs."
+    },
+    "composition": {
+      "title": "Composition",
+      "body": "Pure water enriched with essential minerals and oxygen, balanced for everyday hydration."
+    },
+    "labControl": {
+      "title": "Lab control",
+      "body": "Regular tests by certified experts verify purity, mineral levels and safety."
+    }
+  },
+  "services": {
+    "residential": {
+      "title": "Residential water",
+      "body": "Home delivery of clean drinking water — 19 litre dispenser bottles and cartons, delivered free to your door.",
+      "cta": "Order for home"
+    },
+    "commercial": {
+      "title": "Commercial water",
+      "body": "Bulk supply for offices, hotels, restaurants and businesses — on time, every time, at any scale.",
+      "cta": "Request bulk pricing"
+    },
+    "filtrationPlant": {
+      "title": "Filtration plants",
+      "body": "Installation and maintenance of water filtration plants for homes, offices, schools and housing societies.",
+      "cta": "Ask about a plant"
+    },
+    "softening": {
+      "title": "Water softening",
+      "body": "Reduce water hardness to protect your appliances, pipes and geysers from scale build-up.",
+      "cta": "Ask about softening"
+    },
+    "pageEyebrow": "What we do",
+    "pageTitle": "Services for homes and businesses",
+    "pageBody": "Whether you need a single bottle at home or a reliable supply for a hotel, we have you covered. Send an enquiry and our team will call you back.",
+    "enquiryTitle": "Send an enquiry",
+    "enquiryBody": "Tell us what you need and we'll get back to you, usually within a few hours."
+  },
+  "quality": {
+    "eyebrow": "Quality",
+    "title": "From source to sealed bottle",
+    "body": "Every drop of Oxyrich water goes through a 12-step purification and enrichment process, followed by laboratory checks, before it reaches your door.",
+    "stepsTitle": "Our 12-step process",
+    "labTitle": "Laboratory control",
+    "labBody": "Regular tests by certified experts verify purity, mineral levels and safety, and every batch is checked against health and safety standards — monitored from source to bottle.",
+    "certsTitle": "Certifications",
+    "certsBody": "Certificates and lab reports will be published here.",
+    "certsPending": "Certificate to be published",
+    "steps": {
+      "1": {
+        "title": "Source intake",
+        "body": "Raw water is drawn and screened before it enters the plant."
+      },
+      "2": {
+        "title": "Sediment filtration",
+        "body": "Sand and sediment filters remove suspended particles."
+      },
+      "3": {
+        "title": "Activated carbon",
+        "body": "Carbon filtration reduces chlorine, odour and organic compounds."
+      },
+      "4": {
+        "title": "Water softening",
+        "body": "Hardness minerals that cause scale are reduced."
+      },
+      "5": {
+        "title": "Micron filtration",
+        "body": "Fine cartridge filters capture the smallest particles."
+      },
+      "6": {
+        "title": "Reverse osmosis",
+        "body": "A membrane removes dissolved impurities and contaminants."
+      },
+      "7": {
+        "title": "Mineral balancing",
+        "body": "Essential minerals are added back in measured amounts for taste and health."
+      },
+      "8": {
+        "title": "Oxygen enrichment",
+        "body": "Water is enriched with oxygen for a fresh, light taste."
+      },
+      "9": {
+        "title": "UV sterilisation",
+        "body": "Ultraviolet light neutralises bacteria and viruses without chemicals."
+      },
+      "10": {
+        "title": "Ozonation",
+        "body": "Ozone disinfects the water and keeps it fresh in the bottle."
+      },
+      "11": {
+        "title": "Bottle washing",
+        "body": "Bottles are washed, rinsed and sanitised before every fill."
+      },
+      "12": {
+        "title": "Filling & sealing",
+        "body": "Bottles are filled and sealed in a hygienic area, then batch-checked."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "We deliver quality water",
+    "body": "Oxyrich Pakistan provides purified, mineral- and oxygen-enriched drinking water to homes and businesses across Islamabad. Our mission is simple: safe, fresh, healthy drinking water for every home and business — backed by advanced purification and strict quality control.",
+    "missionTitle": "Our mission",
+    "missionBody": "To provide safe, fresh and healthy drinking water to every home and business, using advanced purification and strict quality control.",
+    "satisfiedTitle": "Satisfied customers",
+    "satisfiedBody": "A growing family of customers who trust Oxyrich every day.",
+    "standardTitle": "Standard product",
+    "standardBody": "Consistent taste, purity and safety in every bottle.",
+    "approachTitle": "How we work",
+    "approachBody": "We study what our customers need, plan delivery routes and stock so orders arrive on time, and keep improving our process based on your feedback.",
+    "teamTitle": "Our team & facility",
+    "photoSoon": "Photo coming soon",
+    "imageAlt": "Customer enjoying a bottle of water outdoors"
+  },
+  "testimonials": {
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "goTo": "Show testimonial {index}"
+  },
+  "delivery": {
+    "label": "Your sector or area",
+    "placeholder": "e.g. G-11, F-7, Bahria Town",
+    "check": "Check",
+    "yes": "Great news — we deliver to {area}. Delivery is free.",
+    "no": "We couldn't find \"{area}\" in our list yet. Message us on WhatsApp and we'll confirm.",
+    "askWhatsApp": "Ask on WhatsApp",
+    "allAreas": "Areas we currently serve",
+    "whatsappMessage": "Hi Oxyrich, do you deliver to {area}?"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "body": "Can't find what you're looking for? Call or WhatsApp us any time — we're open 24/7.",
+    "items": {
+      "areas": {
+        "q": "Which areas do you deliver to?",
+        "a": "We deliver across Islamabad, including the I, G, F, E and H sectors, DHA and Bahria Town. Use the delivery checker on our home page, or message us on WhatsApp if your area isn't listed."
+      },
+      "timings": {
+        "q": "What are your delivery timings?",
+        "a": "We are open Monday to Sunday, 24/7. Place your order any time and we'll call to confirm a delivery slot that suits you."
+      },
+      "fee": {
+        "q": "Is delivery free?",
+        "a": "Yes. Delivery is free across our service areas."
+      },
+      "deposit": {
+        "q": "How does the 19 litre bottle deposit work?",
+        "a": "19 litre bottles are returnable. With your first order we charge a refundable deposit for each bottle. On every repeat order, simply hand back your empty bottle and you pay only for the water. Your account shows how many of our bottles you currently hold."
+      },
+      "return": {
+        "q": "Can I return bottles and get my deposit back?",
+        "a": "Yes. If you no longer need our service, return your bottles in good condition and we'll refund the deposit. Contact us to arrange a collection."
+      },
+      "minimum": {
+        "q": "Is there a minimum order?",
+        "a": "You can order a single 19 litre bottle. For cartons and bulk orders, call or WhatsApp us and we'll confirm the best option for your area."
+      },
+      "payment": {
+        "q": "How can I pay?",
+        "a": "Pay cash on delivery. We'll confirm the total when we call to confirm your order."
+      },
+      "subscription": {
+        "q": "Can I set up a regular delivery?",
+        "a": "Yes. Create a weekly or bi-weekly delivery plan for 19 litre bottles. You can skip or pause the next delivery any time from your account."
+      }
+    }
+  },
+  "cta": {
+    "title": "Fresh water, delivered free",
+    "body": "Order online, call or WhatsApp — we're open 24/7."
+  },
+  "footer": {
+    "about": "Purified, mineral- and oxygen-enriched drinking water with free home and office delivery across Islamabad.",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "contact": "Contact us",
+    "hours": "Hours",
+    "address": "Address",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "rights": "© {year} Oxyrich Pakistan. All rights reserved.",
+    "follow": "Follow us"
+  },
+  "products": {
+    "eyebrow": "Products",
+    "title": "Oxyrich mineral water",
+    "body": "All prices include free delivery across our service areas. Pay cash on delivery.",
+    "specs": "Specifications",
+    "size": "Bottle size",
+    "pack": "Pack",
+    "price": "Price",
+    "depositLabel": "Bottle deposit",
+    "category": "Category",
+    "compositionTitle": "Mineral composition",
+    "compositionNote": "Lab analysis to be published. Values will be added once the latest lab report is available.",
+    "mineral": "Parameter",
+    "value": "Value",
+    "orderBoxTitle": "Order this product",
+    "noDeposit": "No deposit",
+    "litres": "{size} L",
+    "related": "Other products",
+    "goToOrder": "Go to checkout",
+    "backToProducts": "All products"
+  },
+  "order": {
+    "eyebrow": "Checkout",
+    "title": "Your order",
+    "body": "Cash on delivery. We'll call to confirm your order and delivery time.",
+    "empty": "Your order is empty.",
+    "browse": "Browse products",
+    "details": "Delivery details",
+    "items": "Items",
+    "summary": "Order summary",
+    "name": "Full name",
+    "phone": "Mobile number",
+    "phoneHint": "We'll call or WhatsApp this number to confirm.",
+    "sector": "Sector / area",
+    "sectorPlaceholder": "e.g. G-11/2",
+    "address": "House, street and landmark",
+    "addressPlaceholder": "House 12, Street 4, near the park",
+    "notes": "Delivery notes",
+    "notesPlaceholder": "Best time to deliver, gate code, etc.",
+    "bottlesReturned": "Empty Oxyrich 19 L bottles you'll hand back",
+    "bottlesReturnedHint": "Each empty you return replaces the deposit for one new bottle. Our rider checks empties on delivery.",
+    "bottleBalance": "Our records show you hold {count} of our bottles.",
+    "deposit": "Bottle deposit (refundable)",
+    "delivery": "Delivery",
+    "free": "Free",
+    "payment": "Payment",
+    "cod": "Cash on delivery",
+    "place": "Place order",
+    "placing": "Placing order…",
+    "successTitle": "Thank you! Your order {number} is placed.",
+    "successBody": "We'll call you on {phone} shortly to confirm delivery. You can also send the order to us on WhatsApp.",
+    "sendWhatsApp": "Also send on WhatsApp",
+    "continue": "Continue browsing",
+    "createAccount": "Create an account to reorder in one tap",
+    "product": "Product",
+    "selectProduct": "Select a product",
+    "whatsappSummary": "Hi Oxyrich, I just placed order {number}:",
+    "loggedInAs": "Ordering as {name}",
+    "useSavedAddress": "Use a saved address",
+    "errorGeneric": "Sorry, we couldn't place your order. Please try again or call us.",
+    "errorRateLimit": "Too many orders from this connection. Please call or WhatsApp us instead.",
+    "errorUnavailable": "One of the products is no longer available. Please review your order.",
+    "errorBot": "Please complete the security check and try again."
+  },
+  "subscriptions": {
+    "eyebrow": "Delivery plans",
+    "title": "Never run out of water",
+    "body": "Set up a regular 19 litre delivery and we'll bring fresh bottles on schedule. Skip or pause the next delivery from your account whenever you like.",
+    "weekly": "Weekly",
+    "weeklyBody": "A fresh delivery every week — ideal for families and busy offices.",
+    "biweekly": "Every two weeks",
+    "biweeklyBody": "A delivery every other week — ideal for smaller households.",
+    "perDelivery": "per delivery",
+    "how1": "Choose how many bottles and how often",
+    "how2": "We deliver on schedule and collect your empties",
+    "how3": "Skip, pause or cancel any time from your account",
+    "formTitle": "Start a plan",
+    "loginRequired": "Log in or create an account to start a delivery plan.",
+    "frequency": "Frequency",
+    "bottles": "Bottles per delivery",
+    "startDate": "First delivery date",
+    "start": "Start plan",
+    "started": "Your delivery plan is active. Manage it from your account.",
+    "noReturnable": "Delivery plans are available for 19 litre bottles."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "We're here 24/7",
+    "body": "Call, WhatsApp or email us — or send a message below and we'll get back to you.",
+    "formTitle": "Send us a message",
+    "mapTitle": "Find us",
+    "mapIframeTitle": "Map showing Oxyrich Pakistan in I-9/3, Islamabad",
+    "loadMap": "Show map",
+    "directions": "Get directions",
+    "phone": "Phone & WhatsApp",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Hours"
+  },
+  "form": {
+    "name": "Full name",
+    "phone": "Phone number",
+    "email": "Email",
+    "message": "Message",
+    "company": "Company name",
+    "monthlyVolume": "Estimated monthly volume",
+    "monthlyVolumePlaceholder": "e.g. 200 × 19 L bottles",
+    "address": "Address",
+    "enquiryType": "Enquiry about",
+    "types": {
+      "CONTACT": "General question",
+      "COMMERCIAL": "Commercial / bulk supply",
+      "FILTRATION_PLANT": "Filtration plant",
+      "SOFTENING": "Water softening"
+    },
+    "sending": "Sending…",
+    "sent": "Thank you! We've received your message and will be in touch soon.",
+    "error": "Sorry, something went wrong. Please try again or call us.",
+    "rateLimited": "Too many messages from this connection. Please call or WhatsApp us instead.",
+    "honeypot": "Leave this field empty"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginBody": "Log in with your mobile number to reorder and manage deliveries.",
+    "registerTitle": "Create your account",
+    "registerBody": "Reorder in one tap, track your bottle balance and manage delivery plans.",
+    "forgotTitle": "Forgot your password?",
+    "forgotBody": "Enter your mobile number. If it has an email on file, we'll send a reset link. Otherwise our team will help you on WhatsApp.",
+    "resetTitle": "Choose a new password",
+    "phone": "Mobile number",
+    "phonePlaceholder": "03XX-XXXXXXX",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "newPassword": "New password",
+    "name": "Full name",
+    "email": "Email",
+    "emailHint": "Used only for order updates and password resets.",
+    "remember": "Remember me",
+    "forgotLink": "Forgot password?",
+    "login": "Log in",
+    "loggingIn": "Logging in…",
+    "register": "Create account",
+    "registering": "Creating account…",
+    "sendReset": "Send reset link",
+    "sending": "Sending…",
+    "savePassword": "Save new password",
+    "noAccount": "New to Oxyrich?",
+    "haveAccount": "Already have an account?",
+    "signUp": "Create an account",
+    "signIn": "Log in",
+    "invalid": "Incorrect mobile number or password.",
+    "rateLimited": "Too many attempts. Please wait a few minutes and try again.",
+    "phoneTaken": "An account with this mobile number already exists. Try logging in.",
+    "resetSent": "If an account with an email exists for this number, a reset link is on its way. No email on file? Message us on WhatsApp and we'll help.",
+    "resetWhatsApp": "Get help on WhatsApp",
+    "resetWhatsAppMessage": "Hi Oxyrich, I need help resetting the password for my account ({phone}).",
+    "resetDone": "Your password has been updated. You can now log in.",
+    "resetInvalid": "This reset link is invalid or has expired. Please request a new one.",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "account": {
+    "title": "My account",
+    "hello": "Hello, {name}",
+    "orders": "Order history",
+    "noOrders": "You haven't placed any orders yet.",
+    "reorder": "Reorder",
+    "reordering": "Placing…",
+    "reordered": "Order {number} placed. We'll call to confirm.",
+    "order": "Order",
+    "date": "Date",
+    "status": "Status",
+    "total": "Total",
+    "subscription": "Delivery plans",
+    "noSubscription": "No active delivery plan.",
+    "startPlan": "Start a plan",
+    "nextDelivery": "Next delivery: {date}",
+    "skip": "Skip next delivery",
+    "pause": "Pause",
+    "resume": "Resume",
+    "cancelPlan": "Cancel plan",
+    "confirmCancel": "Yes, cancel plan",
+    "keepPlan": "Keep plan",
+    "addresses": "Saved addresses",
+    "noAddresses": "No saved addresses yet.",
+    "addAddress": "Add address",
+    "label": "Label",
+    "labelPlaceholder": "Home, Office…",
+    "street": "Street",
+    "house": "House / flat",
+    "default": "Default",
+    "makeDefault": "Make default",
+    "delete": "Delete",
+    "bottles": "Bottle balance",
+    "bottlesBody": "Oxyrich 19 L bottles currently with you",
+    "logout": "Log out",
+    "security": "Password",
+    "changePassword": "Change password",
+    "currentPassword": "Current password",
+    "passwordChanged": "Your password has been changed.",
+    "wrongPassword": "Your current password is incorrect."
+  },
+  "status": {
+    "PENDING": "Pending",
+    "CONFIRMED": "Confirmed",
+    "OUT_FOR_DELIVERY": "Out for delivery",
+    "DELIVERED": "Delivered",
+    "CANCELLED": "Cancelled",
+    "ACTIVE": "Active",
+    "PAUSED": "Paused",
+    "WEEKLY": "Weekly",
+    "BIWEEKLY": "Every two weeks"
+  },
+  "validation": {
+    "required": "This field is required.",
+    "nameRequired": "Please enter your name.",
+    "mobileInvalid": "Enter a valid mobile number, e.g. 0336-4448494.",
+    "phoneInvalid": "Enter a valid phone number, e.g. 0336-4448494 or 051-1234567.",
+    "emailInvalid": "Enter a valid email address.",
+    "sectorRequired": "Please enter your sector or area.",
+    "addressRequired": "Please enter your delivery address.",
+    "productRequired": "Please choose a product.",
+    "qtyMin": "Quantity must be at least 1.",
+    "qtyMax": "For larger orders please call us.",
+    "cartEmpty": "Add at least one product.",
+    "messageShort": "Please write a little more (at least 10 characters).",
+    "companyRequired": "Please enter your company name.",
+    "passwordShort": "Password must be at least 8 characters.",
+    "passwordRequired": "Please enter your password.",
+    "passwordMismatch": "Passwords don't match.",
+    "dateInvalid": "Choose a valid date.",
+    "tooLong": "That's too long."
+  },
+  "errors": {
+    "notFoundTitle": "This page has run dry",
+    "notFoundBody": "We couldn't find the page you're looking for. It may have moved, or the link may be wrong.",
+    "serverTitle": "Something went wrong",
+    "serverBody": "Sorry — an unexpected error occurred on our side. Please try again, or call us to place your order.",
+    "tryAgain": "Try again",
+    "goHome": "Go to home page"
+  },
+  "legal": {
+    "updated": "Last updated: {date}",
+    "draftNote": "This page is a draft and should be reviewed by the business owner before launch."
+  }
+}
