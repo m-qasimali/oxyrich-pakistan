@@ -8,6 +8,8 @@ export default defineConfig({
     seed: 'tsx prisma/seed.ts',
   },
   datasource: {
-    url: env('DATABASE_URL'),
+    // Migrations need a direct (non-pooled) connection. On Neon/Supabase set DIRECT_URL to
+    // the direct connection string; the app itself uses the pooled DATABASE_URL at runtime.
+    url: process.env.DIRECT_URL || env('DATABASE_URL'),
   },
 })
